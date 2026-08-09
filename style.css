@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    background: linear-gradient(135deg, #ffe0ec, #ffd1dc);
+    color: #4a2633;
+}
+
+main {
+    width: 90%;
+    max-width: 600px;
+    padding: 40px 25px;
+
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    padding: 15px 30px;
+
+    font-size: 1rem;
+    border-radius: 30px;
+
+    background: #e75480;
+    color: white;
+
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.recuerdo {
+    margin-top: 30px;
+}
+
+.recuerdo img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.recuerdo p {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.recuerdo {
+    margin-top: 30px;
+    animation: aparecer 0.6s ease;
+}
+
+.recuerdo img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.recuerdo p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.final {
+    animation: aparecer 1s ease;
+}
+
+.final h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.final p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.corazones {
+    margin-top: 25px;
+    font-size: 1.8rem;
+    animation: latir 1.5s infinite;
+}
+
+@keyframes latir {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    main {
+        width: 100%;
+        padding: 30px 18px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 13px 24px;
+        font-size: 0.95rem;
+    }
+
+    .recuerdo img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .recuerdo p {
+        line-height: 1.5;
+    }
+
+    .final h2 {
+        font-size: 1.6rem;
+    }
+}
+.transicion {
+    margin-top: 30px;
+    animation: aparecer 0.8s ease;
+}
+
+.transicion h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.transicion p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.razones {
+    margin-top: 30px;
+    animation: aparecer 0.8s ease;
+}
+
+.razones h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+#razonTexto {
+    min-height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.2rem;
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+
+    transition: opacity 0.25s ease;
+}
+.carta {
+    margin-top: 30px;
+    animation: aparecer 0.8s ease;
+}
+
+.carta h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.carta p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .carta h2 {
+        font-size: 1.6rem;
+    }
+
+    .carta p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+}
